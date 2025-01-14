@@ -179,9 +179,7 @@ footer {
   }
 }
 
-
-
-/* Seccion Hero */
+/* Sección Hero */
 .hero {
   position: relative;
 }
@@ -219,95 +217,49 @@ footer {
 }
 
 .button-container {
-  text-align: center; /* Centra el botón */
-  margin-top: 20px; /* Espaciado superior */
+  text-align: center;
+  margin-top: 20px;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 20px; /* Tamaño del botón */
-  background-color: #004d40; /* Color de fondo (verde oscuro) */
-  color: white; /* Color del texto */
-  text-decoration: none; /* Eliminar subrayado */
-  border-radius: 5px; /* Bordes redondeados */
-  font-size: 16px; /* Tamaño de la fuente */
-  font-weight: bold; /* Negrita */
-  transition: background-color 0.3s ease; /* Animación de cambio de color */
+  padding: 10px 20px;
+  background-color: #004d40;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #00796b; /* Cambio de color al pasar el cursor */
+  background-color: #00796b;
 }
 
-
-#facebook-content {
-  text-align: center;
-  margin: 20px auto;
+/* Estilos para la sección de contacto */
+#contact {
+  background-image: url('img/sanbernabe1.JPG');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 40px 0;
 }
 
-#facebook-content iframe {
-  display: block;
+/* Contenedor principal del contacto */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Contenedor principal del contacto */
-.contact-container {
-  display: flex;  /* Hace que los elementos hijos se alineen en una fila */
-  justify-content: space-between; /* Distribuye el espacio entre los elementos */
-  align-items: flex-start; /* Alinea los elementos al inicio (parte superior) */
-}
-
-/* Estilos para el bloque de información de contacto */
 .info-box {
-  width: 45%; /* Controla el ancho del bloque de información */
-  margin: 0 auto; /* Esto centra el recuadro de contacto dentro de su área */
+  flex: 1;
   padding: 20px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos para el mapa */
-.map-box {
-  width: 45%; /* Controla el ancho del mapa */
-  padding: 10px;
-}
-
-/* Respuesta en pantallas más pequeñas */
-@media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column; /* En pantallas pequeñas, los elementos se colocan en columnas */
-    align-items: center;
-  }
-
-  .info-box, .map-box {
-    width: 90%; /* Hacer los elementos más anchos en pantallas pequeñas */
-  }
-}
-/* Estilos para la sección de contacto */
-#contact {
-  background-image: url('img/sanbernabe1.JPG'); /* Agrega la ruta de tu imagen aquí */
-  background-size: cover; /* La imagen cubre todo el fondo */
-  background-position: center center; /* La imagen se centra */
-  background-repeat: no-repeat; /* La imagen no se repite */
-  padding: 40px 0; /* Espaciado alrededor del contenido */
-}
-
-/* Contenedor principal del contacto */
-.contact-container {
-  display: flex;  /* Los elementos hijos se alinean en una fila */
-  justify-content: space-between; /* Distribuye el espacio entre los elementos */
-  align-items: flex-start; /* Alinea los elementos al inicio (parte superior) */
-  gap: 20px;  /* Agrega un espacio entre los elementos */
-  max-width: 1200px; /* Establece un ancho máximo */
-  margin: 0 auto; /* Centra el contenedor */
-}
-
-/* Estilos para el bloque de información de contacto */
-.info-box {
-  flex: 1; /* Hace que ocupe el mismo espacio que el mapa */
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para que se vea la imagen de fondo */
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -316,58 +268,56 @@ footer {
   text-align: center;
 }
 
-/* Estilos para el mapa */
 .map-box {
-  flex: 1; /* Hace que ocupe el mismo espacio que el bloque de contacto */
+  flex: 1;
   display: flex;
   justify-content: center;
 }
 
-/* Respuesta en pantallas más pequeñas */
 @media (max-width: 768px) {
   .contact-container {
-    flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+    flex-direction: column;
     align-items: center;
   }
 
   .info-box, .map-box {
-    width: 90%; /* Hace que los elementos sean más anchos en pantallas pequeñas */
+    width: 90%;
   }
 
   .map-box iframe {
-    width: 100%; /* Hace que el mapa ocupe el 100% del ancho */
+    width: 100%;
   }
 }
 
 .info-box {
   display: flex;
-  flex-direction: column; /* Organiza los elementos en columna */
-  gap: 15px; /* Espaciado entre tarjetas */
-  align-items: center; /* Centra las tarjetas */
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
   margin-top: 20px;
 }
 
 .contact-card {
   display: flex;
-  align-items: center; /* Alinea icono y texto verticalmente */
-  gap: 10px; /* Espaciado entre el icono y el texto */
+  align-items: center;
+  gap: 10px;
   padding: 15px;
-  width: 100%; /* Asegura que todas las tarjetas tengan el mismo ancho */
-  max-width: 400px; /* Define un tamaño máximo */
-  border: 2px solid #ddd; /* Borde gris claro */
-  border-radius: 10px; /* Esquinas redondeadas */
-  background-color: #f5f5f5; /* Fondo claro */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-card i {
-  font-size: 24px; /* Tamaño del icono */
-  color: #007bff; /* Color azul del icono */
+  font-size: 24px;
+  color: #007bff;
 }
 
 .contact-card p {
-  margin: 0; /* Elimina márgenes del texto */
+  margin: 0;
   font-family: Arial, sans-serif;
   font-size: 16px;
-  color: #333; /* Color del texto */
+  color: #333;
 }
