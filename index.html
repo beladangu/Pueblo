@@ -22,11 +22,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <!-- Estilos de FancyBox -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-  <!-- jQuery (requerido por FancyBox) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- FancyBox JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+<!-- jQuery (requerido por FancyBox) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- FancyBox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,6 +41,7 @@
      src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v15.0">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -70,49 +73,51 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>Sobre el Pueblo</h2>
-    <main>
-      <section class="first-section">
-        <!-- Lado 1 -->
-        <div class="left-column">
-          <img src="img/cuauhxicalli1.png" alt="cuauhxicalli" />
+<!-- About Section -->
+<section id="about" class="section">
+  <h2>Sobre el Pueblo</h2>
+  <!-- Primera Sección -->
+  <main>
+    <section class="first-section">
+      <!-- Lado 1 -->
+      <div class="left-column">
+        <img src="img/cuauhxicalli1.png" alt="cuauhxicalli" />
+        <div class="text-box">
+          <p>
+            Conoce la leyenda del por qué los ancestros utilizaron esta vasija para sus sacrificios. Esta pieza prehispánica se encuentra en el interior de la parroquia de San Bernabé.
+          </p>
+        </div>
+        <button id="play-audio">Reproducir audio</button>
+        <audio id="audio-file" src="img/historia.mp3"></audio>
+      </div>
+
+      <!-- Lado 2 -->
+      <div class="right-column">
+        <iframe
+          src="https://www.youtube.com/embed/ncQX4rCOMB4"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        <div class="text-container">
+          <!-- Subsección izquierda -->
           <div class="text-box">
             <p>
-              Conoce la leyenda del por qué los ancestros utilizaron esta vasija para sus sacrificios. Esta pieza prehispánica se encuentra en el interior de la parroquia de San Bernabé.
+              San Bernabé es una comunidad que se ubica al sur poniente de la CDMX, cuenta con una población aproximada de 11,900 habitantes. Sus principales festividades patronales se celebran el día 19 de marzo y 11 de junio en honor a los santos patrones San José y San Bernabé apóstol. Además, el día de muertos se celebra con gran arraigo, con altares, ofrendas y actividades que integran elementos prehispánicos y católicos. Es importante destacar que su ermita es el punto central de su actividad social y religiosa, pues es donde se realizan misas, celebraciones y reuniones.
             </p>
           </div>
-          <button id="play-audio">Reproducir audio</button>
-          <audio id="audio-file" src="img/historia.mp3"></audio>
-        </div>
-
-        <!-- Lado 2 -->
-        <div class="right-column">
-          <iframe
-            src="https://www.youtube.com/embed/ncQX4rCOMB4"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-          <div class="text-container">
-            <!-- Subsección izquierda -->
-            <div class="text-box">
-              <p>
-                San Bernabé es una comunidad que se ubica al sur poniente de la CDMX, cuenta con una población aproximada de 11,900 habitantes. Sus principales festividades patronales se celebran el día 19 de marzo y 11 de junio en honor a los santos patrones San José y San Bernabé apóstol. Además, el día de muertos se celebra con gran arraigo, con altares, ofrendas y actividades que integran elementos prehispánicos y católicos. Es importante destacar que su ermita es el punto central de su actividad social y religiosa, pues es donde se realizan misas, celebraciones y reuniones.
-              </p>
-            </div>
-            <!-- Subsección derecha -->
-            <div class="text-box">
-              <video controls>
-                <source src="img/videosanbernabe.mp4" type="video/mp4" />
-                Tu navegador no soporta la reproducción de video.
-              </video>
-            </div>
+          <!-- Subsección derecha -->
+          <div class="text-box">
+            <video controls>
+              <source src="img/videosanbernabe.mp4" type="video/mp4" />
+              Tu navegador no soporta la reproducción de video.
+            </video>
           </div>
         </div>
-      </section>
-    </main>
-  </section>
+      </div>
+    </section>
+  </main>
+</section>
+
 
   <!-- Events Section -->
   <section id="events" class="section">
@@ -133,39 +138,65 @@
     </div>
   </section>
 
+
   <!-- Facebook Section -->
   <section id="facebook-content" class="section">
     <h2><p>Mira lo más destacado de nuestra comunidad en redes sociales:</p></h2>
+    
+
     <!-- Publicación incrustada mediante iframe -->
     <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0njfKx8dzovjGUSnNZDAXBoSRpSMBrfDEUbe2cUfhErANetw2jUmVjT5ozo4RTFgJl%26id%3D100074064153728&show_text=true&width=500" width="500" height="648" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
     <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0op2CQKsWaxcdyQaBsYVNV5TUgKaEpqYXWYgzfUUkdS7uv7WD1Z1BpVy3kw2R6ueTl%26id%3D100074064153728&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
     <br><br>
-    <div class="button-container">
-      <a href="https://www.facebook.com/profile.php?id=100074064153728" target="_blank" class="btn">Conoce más</a>
-    </div>
-    <br><br>
+  
+  <div class="button-container">
+    <a href="https://www.facebook.com/profile.php?id=100074064153728" target="_blank" class="btn">Conoce más</a>
+  </div>
+  <br><br>
 
-    <h1>Contacto</h1>
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="contact-container">
-        <!-- Información de contacto a la izquierda -->
-        <!-- Información de contacto en formato de tarjetas -->
-        <div class="contact-info">
-          <div class="card">
-            <i class="bi bi-telephone"></i>
-            <p>(+52) 123-456-7890</p>
-          </div>
-          <div class="card">
-            <i class="bi bi-envelope"></i>
-            <p>contacto@sanbernabe.com</p>
-          </div>
-          <div class="card">
-            <i class="bi bi-geo-alt"></i>
-            <p>San Bernabé Ocotepec, CDMX</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+  
+  <h1>Contacto</h1>
+  <!-- Contact Section -->
+<section id="contact" class="section">
+  <div class="contact-container">
+
+    <!-- Información de contacto a la izquierda -->
+ 
+  <!-- Información de contacto en formato de tarjetas -->
+<div class="info-box">
+  <div class="contact-card">
+    <i class="fas fa-map-marker-alt"></i>
+    <p><strong>Ubicación:</strong> San Bernabé Ocotepec, La Magdalena Contreras,
+      Ciudad de México, CDMX</p>
+  </div>
+  <div class="contact-card">
+    <i class="fas fa-phone"></i>
+    <p><strong>Teléfono:</strong> </p>
+  </div>
+  <div class="contact-card">
+    <i class="fas fa-envelope"></i>
+    <p><strong>Correo:</strong> lbeladang@gmail.com
+    </p>
+  </div>
+</div>
+
+
+    <!-- Mapa de Google a la derecha -->
+    <div class="map-box">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.8449389602783!2d-99.25865818164056!3d19.313940545892624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdff41f35ec153%3A0x7b3718ad8ef4c3a6!2sSan%20Bernab%C3%A9%20Ocotepec%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1736799217817!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pueblo de San Bernabé Ocotepec. Todos los derechos reservados L&B.</p>
+  </footer>
+</body>
 </html>
+
