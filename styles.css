@@ -233,7 +233,7 @@ footer {
   }
 }
 
-
+/* Estilo adicional para overlay y texto central */
 .hero-imagen-fondo {
   position: relative;
   width: 100%;
@@ -287,7 +287,7 @@ footer {
   background-color: #00796b;
 }
 
-/* Estilos para la sección de contacto */
+/* Sección de contacto */
 #contact {
   background-image: url('img/sanbernabe1.JPG');
   background-size: cover;
