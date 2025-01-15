@@ -71,15 +71,10 @@ header nav ul li a:hover {
   background-color: white;
 }
 
-.contact-container {
-  margin: 0 auto;
-  max-width: 600px;
-}
-
 .carousel-item img {
-  width: 100%; /* Ancho total del contenedor */
-  height: auto; /* Altura proporcional a la imagen */
-  max-height: 500px; /* O puedes poner un límite máximo para la altura */
+  width: 100%;
+  height: auto;
+  max-height: 500px;
 }
 
 .info-box {
@@ -169,13 +164,52 @@ footer {
   justify-content: center;
 }
 
+/* Media Queries para Responsividad */
 @media (max-width: 768px) {
+  /* General */
+  body {
+    font-size: 14px;
+  }
+
   .first-section {
     flex-direction: column;
   }
 
   .text-container {
     flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    flex: 1 1 100%; /* Hace que las columnas ocupen todo el ancho en pantallas pequeñas */
+  }
+
+  /* Carrusel */
+  .carousel {
+    flex-direction: column;
+  }
+
+  .carousel-item {
+    min-width: 100%; /* Asegura que los elementos del carrusel ocupen el ancho completo en móviles */
+  }
+
+  /* Contacto */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box, .map-box {
+    width: 90%; /* Aumenta el ancho de los bloques de información en pantallas pequeñas */
+  }
+
+  /* Video y Mapa */
+  .right-column iframe,
+  .right-column video {
+    height: 200px; /* Reducir la altura para pantallas pequeñas */
+  }
+
+  .map-box iframe {
+    width: 100%;
   }
 }
 
@@ -246,7 +280,6 @@ footer {
   padding: 40px 0;
 }
 
-/* Contenedor principal del contacto */
 .contact-container {
   display: flex;
   justify-content: space-between;
